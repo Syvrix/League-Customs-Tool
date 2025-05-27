@@ -1,3 +1,4 @@
+# Structure
 project-root/
 │
 ├── api/                    # Riot API wrappers & integrations
