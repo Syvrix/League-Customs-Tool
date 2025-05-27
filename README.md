@@ -1,13 +1,38 @@
 # League-Customs-Tool
-A tool with the main purpose for custom games with friends.
+A tool with the main purpose for custom games in league of legends with friends.
+
+# Setup
+These instructions will be written for windows.
+## Windows
+Before setting this up you need to a few things: 
+- pip 
+- Python3
+- make
+
+**pip** will be used to install all the packages you need.
+**make** will be mainly used to install requirements, generate the files and run the app.
+The reason for this is so its easy to integrate and setup for any user.
+
+### Setup
+**Make**
+Download make from the official website.
+There are two ways to do this, One is through something called "choco" and another one is from their website.
+I will be installing directly from the website.
+- as of today (2025-05-27) that domain is: https://gnuwin32.sourceforge.net/packages/make.htm
+1. Download "Complete package, except sources" file
+2. Run through the installation
+3. Add the make.exe file to your system path
+    - Usually located at 'C:\Program Files (x86)\GnuWin32\bin'
+
+
+## Linux
+There currently is some documentation for linux here but is not tested.
 
 # UNDER DEVELOPMENT
 This tool is currently under development and will change over time.
 Read-me will currently be used for tracking the goals
 Documentation and instructs will be updated as it goes on.
-
 ## Vision
-
 ### Core Functionality
 - Generate a random Champion
 - Generate 'y' champions based on 'x' per role
