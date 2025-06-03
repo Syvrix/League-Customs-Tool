@@ -6,8 +6,11 @@ install:
 # Windows (Note )
 compile:
 	del /Q requirements*.txt
-	@pip-compile setup/requirements.in > requirements.txt
-	@pip-compile setup/requirements-dev.in > requirements-dev.txt
+	@pip-compile setup/requirements.in > setup/requirements.txt
+	@pip-compile setup/requirement-dev.in > setup/requirements-dev.txt
 
 sync:
-@pip-sync requirements*.txt
+	@pip-sync setup/requirements*.txt
+
+test:
+	echo "Make is installed"
