@@ -5,12 +5,17 @@ install:
 
 # Windows (Note )
 compile:
-	del /Q requirements*.txt
-	@pip-compile setup/requirements.in > setup/requirements.txt
-	@pip-compile setup/requirement-dev.in > setup/requirements-dev.txt
-
+	powershell -Command "Get-ChildItem requirements*.txt | Remove-Item -Force"
+	@pip-compile --output-file=requirements.txt requirements.in
+	@pip-compile --output-file=requirements-dev.txt requirements-dev.in
+	
 sync:
-	@pip-sync setup/requirements*.txt
+	@pip-sync requirements*.txt
 
 test:
 	echo "Make is installed"
+
+testps:
+	powershell -Command "Get-Location"
+	powershell -Command "Get-ChildItem requirements*.txt"
+
